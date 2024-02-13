@@ -1,8 +1,15 @@
 :root {
-  bg: white;
-  text-color: black;
-  soft-bg: #f0f0f0;
-  soft-text-color: #626262;
+  --bg: white;
+  --text-color: black;
+  --soft-bg: #f0f0f0;
+  --soft-text-color: #626262;
+}
+
+.dark {
+  --bg: #0f172a;
+  --text-color: #ddd;
+  --soft-bg: #1f273a;
+  --soft-text-color: #a6a6a6;
 }
 
 * {

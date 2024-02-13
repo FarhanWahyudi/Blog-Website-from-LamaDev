@@ -1,2 +1,38 @@
-.container {
+.burger {
+  width: 20px;
+  height: 16px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-color);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 36px;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: var(--bg);
+}
+
+@media screen and (max-width: 640px) {
+  .link {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
 }
