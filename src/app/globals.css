@@ -40,6 +40,14 @@ a {
   padding: 0 80px;
 }
 
+.ql-container {
+  font-size: 28px !important;
+}
+
+.quill .ql-container .ql-editor::before {
+  color: #b3b3b1;
+}
+
 /* my screen 1326px */
 
 @media screen and (max-width: 1536px) {
