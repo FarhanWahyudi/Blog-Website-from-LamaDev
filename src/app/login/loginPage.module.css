@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 150px 200px;
+  border-radius: 10px;
+  background-color: var(--soft-bg);
+}
+
+.loginButton {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.loginButton:nth-child(1) {
+  background-color: #ff5555;
+}
+.loginButton:nth-child(2) {
+  background-color: #111;
+}
+.loginButton:nth-child(3) {
+  background-color: #087bea;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 100px 150px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    padding: 50px;
+  }
+  .loginButton {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
