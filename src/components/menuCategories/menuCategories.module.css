@@ -23,3 +23,10 @@
 .coding {
   background-color: #5e4fff31;
 }
+
+@media screen and (max-width: 1024px) {
+  .categoryItem {
+    width: 100%;
+    text-align: center;
+  }
+}

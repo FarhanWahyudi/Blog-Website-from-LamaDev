@@ -26,3 +26,15 @@
   margin: 35px 0 60px;
   gap: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+  .categoryList {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: none;
+  }
+}
