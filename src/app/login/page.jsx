@@ -7,6 +7,9 @@ import { useRouter } from 'next/navigation';
 export default function LoginPage() {
   const { push } = useRouter();
   const { status } = useSession();
+  if (status === 'loading') {
+    return <div className={styles.loading}>Loading...</div>;
+  }
   if (status === 'authenticated') {
     push('/');
   }

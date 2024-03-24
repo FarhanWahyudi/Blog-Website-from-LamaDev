@@ -3,6 +3,7 @@
   background-color: coral;
   color: white;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .content {

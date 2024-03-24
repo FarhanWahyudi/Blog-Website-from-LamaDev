@@ -7,8 +7,18 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.bubble.css';
 
 export default function WritePage() {
+  const { push } = useRouter();
+  const { status } = useSession();
+
   const [isOpen, setIsOpen] = useState(false);
   const [value, setValue] = useState('');
+
+  if (status === 'loading') {
+    return <div className={styles.loading}>Loading...</div>;
+  }
+  if (status === 'authenticated') {
+    push('/');
+  }
   return (
     <div className={styles.container}>
       <input className={styles.inputTitle} type="text" placeholder="Title" />
