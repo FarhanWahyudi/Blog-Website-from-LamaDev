@@ -42,7 +42,7 @@ export default async function SinglePage({ params }) {
       <div className={styles.content}>
         <div className={styles.post}>
           <div className={styles.desc} dangerouslySetInnerHTML={{ __html: data?.desc }} />
-          <Comments />
+          <Comments postSlug={slug} />
         </div>
         <Menu />
       </div>
